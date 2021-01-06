@@ -1,4 +1,5 @@
 class TreeNode {
+    public boolean isLeaf;
     TreeNode left;
     TreeNode right;
     int height;
