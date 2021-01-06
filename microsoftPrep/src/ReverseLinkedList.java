@@ -14,14 +14,4 @@ class ReverseLinkedList {
         head.next = prev;
         return head;
     }
-
-    static class Node {
-        Node next;
-        int val;
-
-        Node(int val) {
-            this.val = val;
-        }
-    }
-
 }
