@@ -8,11 +8,11 @@ class SummationViaLinkedListTest {
         Node head1 = new Node(9);
         Node nodeSecond = new Node(9);
         Node nodeThird = new Node(9);
-//        Node nodeFourth = new Node(9);
-//        Node nodeFifth = new Node(9);
-//        Node nodeSixth = new Node(9);
-//        Node nodeSeventh = new Node(9);
-//        Node nodeEight = new Node(9);
+//        TreeNode nodeFourth = new TreeNode(9);
+//        TreeNode nodeFifth = new TreeNode(9);
+//        TreeNode nodeSixth = new TreeNode(9);
+//        TreeNode nodeSeventh = new TreeNode(9);
+//        TreeNode nodeEight = new TreeNode(9);
 
         head1.next = nodeSecond;
         nodeSecond.next = nodeThird;
@@ -27,7 +27,7 @@ class SummationViaLinkedListTest {
         Node node2Third = new Node(9);
         Node node2Fourth = new Node(9);
         Node node2Fifth = new Node(9);
-//        Node node2Sixth = new Node(9);
+//        TreeNode node2Sixth = new TreeNode(9);
 
         head2.next = node2Second;
         node2Second.next = node2Third;
