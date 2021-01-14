@@ -1,0 +1,20 @@
+async function getMovieList(year) {
+  // write your code here
+  const endPoint = "https://jsonmock.hackerrank.com/api/movies?Year="
+  const request = require('request');
+
+  return new Promise((resolve, reject) => {
+    request(endPoint.concat(year), function (error, response, body) {
+        if(error) reject(error)
+
+        else {
+          var responseBody = JSON.parse(body)
+          resolve(responseBody.data.map(titleMapper))
+        }
+    });
+  });
+}
+
+function titleMapper(movieDetails, index, array) {
+    return movieDetails.Title;
+}
